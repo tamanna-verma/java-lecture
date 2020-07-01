@@ -1,0 +1,22 @@
+package temp;
+
+public class Polynomial {
+	int Coeff;
+	int degree[];
+	public Polynomial(){
+degree=new int[10];
+for(int i=0;i<degree.length;i++) {
+	this.degree[i]= 
+	
+}
+	
+	}
+	public setCoefficient( int degree, int Coeff) {
+		if (this.degree.length<degree) {
+		this.degree.length=degree;}
+		this.Coeff=Coeff;
+		
+
+
+	}
+}

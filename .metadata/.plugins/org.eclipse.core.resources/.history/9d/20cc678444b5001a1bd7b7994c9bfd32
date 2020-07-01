@@ -1,0 +1,27 @@
+package ClassesAndObjects;
+
+
+public class ComplexNumbers {
+	private int real;
+	private int imaginary;
+	public ComplexNumbers(int real,int imaginary){
+		this.real=real;
+		this.imaginary=imaginary;
+	}
+	public int getreal() {
+		return real;
+	}	
+	public void setreal(int r) {
+		this.real=r;
+	}
+	public int getimaginary() {
+		return imaginary;
+	}
+	public void setimaginary(int i) {
+		this.imaginary=i;
+	}
+	public void print()
+	{
+System.out.print(real+"+i"+imaginary);
+	}
+}

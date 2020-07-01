@@ -1,0 +1,13 @@
+package ClassesAndObjects;
+
+public class FractionUse {
+
+	public static void main(String[] args) {
+		Fraction f1=new Fraction(20,30);
+f1.print();
+f1.setNumerator(22);
+f1.setDenominator(44);
+f1.print();
+	}
+
+}

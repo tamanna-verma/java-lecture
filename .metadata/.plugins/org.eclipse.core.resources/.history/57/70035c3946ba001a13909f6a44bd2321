@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class CheckNumbersInArray {
+public static int[] Input(int x) {
+	Scanner scan=new Scanner(System.in);
+int Array[]=new int [x];
+for(int i=0;i<x;i++) {
+Array[i]=scan.nextInt();	
+}
+	return Array;
+}
+public static boolean isthere(int Array[],int y) {
+	
+if(Array.length==1) {
+	if(Array[Array.length]==y) {
+		return true;
+	}
+if(Array[0]==y) {
+	return true;
+}	
+
+int newArray[]=new int[Array.length-1];
+for(int i=1;i<Array.length;i++) {
+	newArray[i-1]=Array[i];
+	
+}
+
+boolean ans=isthere(newArray,y);
+
+return ans;
+}
+return false;
+}
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+int x=scan.nextInt();
+int Array[]=Input(x);
+int y=scan.nextInt();
+Boolean ans =isthere(Array,y);
+System.out.println(ans);
+	}
+
+}

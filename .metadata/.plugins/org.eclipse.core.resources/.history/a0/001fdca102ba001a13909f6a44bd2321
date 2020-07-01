@@ -1,0 +1,24 @@
+
+public class NumberOfDigits {
+public static int Digits(int n)
+{
+	if(n==0) 
+	{
+		return 1;
+	}
+	int Digit=0;
+	if(n>0) {
+		 n=n/10;
+	 Digit=Digit+1;
+	 Digits(n);
+	}
+	return Digit;
+}
+	public static void main(String[] args) {
+		int n=1009;
+	int res=	Digits(n);
+	System.out.println(res);
+
+	}
+
+}

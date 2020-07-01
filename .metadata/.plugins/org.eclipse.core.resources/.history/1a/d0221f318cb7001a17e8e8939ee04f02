@@ -1,0 +1,33 @@
+package temp;
+
+public class Polynomial {
+	private int Coefficient[];
+	public Polynomial(){
+		Coefficient=new int[5];
+
+	}
+	public  void setCoefficient(int degree,int Coeff) {
+		while (true)
+		 {
+			if(degree<Coefficient.length) 
+				break;
+			restructure();
+		}
+		Coefficient[degree]=Coeff;
+	}
+	public void restructure() {
+ int temp[]=new int[Coefficient.length*2];
+ for(int i=0;i<Coefficient.length;i++) {
+	 temp[i]=Coefficient[i]; 
+ }
+ }
+	public void print() {
+	for(int i=0;i<Coefficient.length;i++) {
+		if(Coefficient[i]!=0) {
+			System.out.print(Coefficient[i]+"x"+i+" ");
+			
+		}
+		
+	}
+	}
+}

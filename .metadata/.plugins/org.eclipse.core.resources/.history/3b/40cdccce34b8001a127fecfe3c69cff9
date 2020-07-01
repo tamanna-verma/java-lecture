@@ -1,0 +1,11 @@
+package Vehicle;
+
+public class vehicle {
+	
+String Colour;
+	int maxSpeed;
+	public void print() {
+		System.out.println("Vehicle colour:"+Colour);
+		System.out.println("Vehicle maxSpeed:"+ maxSpeed);
+	}
+}

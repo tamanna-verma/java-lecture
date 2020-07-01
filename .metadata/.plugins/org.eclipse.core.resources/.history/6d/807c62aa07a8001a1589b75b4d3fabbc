@@ -1,0 +1,38 @@
+package Array;
+import java.util.Scanner;
+public class Unique
+{
+	public static void TakingInput(int n)
+	{
+		Scanner scan=new Scanner(System.in);
+		int Array[]=new int[n];int a;int b;
+		for(int i =0;i<n;i++)
+		{
+			Array[i]=scan.nextInt();
+			for(int l=0;l<n;l++) 
+			{
+				for(int j=0;j<n&&j!=l;j++)
+				{
+					a=	Array[i];
+				b=Array[j];
+				if(a==b) {
+					break;
+				}else {
+				System.out.print(a);
+				}
+				}
+				}
+		}
+	}
+	  
+	
+	
+public static void main(String[] args) {
+Scanner scan=new Scanner(System.in);
+int NumberOfTest=scan.nextInt();
+for(int x=1;x<=NumberOfTest;x++)	
+{int n=scan.nextInt();
+	TakingInput(n);
+	}
+  }
+}

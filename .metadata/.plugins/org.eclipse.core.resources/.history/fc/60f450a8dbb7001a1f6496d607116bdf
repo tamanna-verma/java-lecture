@@ -1,0 +1,17 @@
+package Vehicle;
+
+public class VehicleUse {
+
+	public static void main(String[] args) {
+		vehicle v=new vehicle();
+//		vehicle v=new vehicle();
+//		v.print();
+//
+//		Cars c=new Cars();
+//		c.numGears=10;
+//		c.Colour="Red";
+//		c.print();
+//		c.printCars();
+	}
+
+}

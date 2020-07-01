@@ -1,0 +1,13 @@
+package Vehicle;
+
+public class vehicle {
+	private vehicle() {
+		System.out.println("dbdh");
+	}
+//String Colour;
+//	int maxSpeed;
+//	public void print() {
+//		System.out.println("Vehicle colour:"+Colour);
+//		System.out.println("Vehicle maxSpeed:"+ maxSpeed);
+//	}
+}

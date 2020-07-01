@@ -1,0 +1,17 @@
+package ClassesAndObjects;
+import java.util.Scanner;
+public class ComplexNumbersUse {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		int real1=scan.nextInt();
+		int real2=scan.nextInt();
+		int imaginary1=scan.nextInt();
+		int imaginary2=scan.nextInt();
+
+		ComplexNumbers c1= new ComplexNumbers( real1, imaginary1);
+		ComplexNumbers c2= new ComplexNumbers( real2, imaginary2);
+		c1.print();
+	}
+
+}
